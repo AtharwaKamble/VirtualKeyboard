@@ -80,7 +80,7 @@ while True:
     lmList = tracker.getPostion(frame, draw=False)
     if lmList:
         signTipX, signTipY = lmList[8][1], lmList[8][2]
-        thumbTipX, thumbTipY = lmList[4][1], lmList[4][2]
+        thumbTipX, thumbTipY = lmList[12][1], lmList[12][2]
         if calculateIntDidtance((signTipX, signTipY), (thumbTipX, thumbTipY)) <50:
             centerX = int((signTipX+thumbTipX)/2)
             centerY = int((signTipY + thumbTipY)/2)
